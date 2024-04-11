@@ -5,8 +5,6 @@ import math
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import r2_score, mean_squared_error
 
 # Constants
 lat = 30.1838  # decimal degrees
@@ -14,7 +12,6 @@ jo = 118.11  # solar constant 118.11 MJ/m2.day or 1367 W/m2
 #interval in julian days 
 ND_i = 1     
 ND_f = 365
-
 
 #Calculate the Earth-Sun distance correction
 def dD(day):
