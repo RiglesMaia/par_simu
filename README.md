@@ -19,3 +19,6 @@ This Python script calculates Photosynthetically Active Radiation (PAR) using so
 
 - `par_simulation.py`: Main Python script for PAR simulation.
 - `README.md`: This README file providing instructions and information about the script.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
