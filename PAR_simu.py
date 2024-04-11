@@ -5,13 +5,16 @@ import math
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score, mean_squared_error
 
 # Constants
-lat = 30.1838  # decimal degrees
+lat = -22.1838  # decimal degrees
 jo = 118.11  # solar constant 118.11 MJ/m2.day or 1367 W/m2
 #interval in julian days 
 ND_i = 1     
 ND_f = 365
+
 
 #Calculate the Earth-Sun distance correction
 def dD(day):
@@ -69,31 +72,31 @@ fig, (ax1, ax2, ax3, ax4, ax5) = plt.subplots(5, 1, figsize=(8, 6))
 
 # Plot 1: 
 ax1.plot(declinations, color='orange')
-ax1.set_ylabel('g')
+ax1.set_ylabel('g (°)')
 ax1.set_xlabel('Day of Year')
 ax1.legend()
 
 # Plot 2: 
 ax2.plot(distances, color='purple')
-ax2.set_ylabel('dD')
+ax2.set_ylabel('dD (AU)')
 ax2.set_xlabel('Day of Year')
 ax2.legend()
 
 # Plot 3: 
 ax3.plot(angle_hours, color='green')
-ax3.set_ylabel('Hn')
+ax3.set_ylabel('Hn (°)')
 ax3.set_xlabel('Day of Year')
 ax3.legend()
 
 # Plot 4: 
 ax4.plot(rad_extras, color='blue')
-ax4.set_ylabel('Q0')
+ax4.set_ylabel('Q0 (MJ/m².day)')
 ax4.set_xlabel('Day of Year')
 ax4.legend()
 
 # Plot 5: 
 ax5.plot(pars, color='red')
-ax5.set_ylabel('PAR')
+ax5.set_ylabel('PAR (MJ/m².day)')
 ax5.set_xlabel('Day of Year')
 ax5.legend()
 
