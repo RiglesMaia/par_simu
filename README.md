@@ -14,7 +14,6 @@ This Python script calculates Photosynthetically Active Radiation (PAR) using so
 - pandas
 - numpy
 - matplotlib
-- scikit-learn
 
 ## File Structure
 
