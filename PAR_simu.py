@@ -69,7 +69,7 @@ fig, (ax1, ax2, ax3, ax4, ax5) = plt.subplots(5, 1, figsize=(8, 6))
 
 # Plot 1: 
 ax1.plot(declinations, color='orange')
-ax1.set_ylabel('g ()')
+ax1.set_ylabel('g')
 ax1.set_xlabel('Day of Year')
 ax1.legend()
 
