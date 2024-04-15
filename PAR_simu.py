@@ -11,7 +11,8 @@ import matplotlib.pyplot as plt
 lat = -22.1838  # decimal degrees
 jo = 118.11  # solar constant 118.11 MJ/m2.day or 1367 W/m2
 #interval in julian days 
-ND_i = 1     
+ND_i = 1  
+
 ND_f = 365
 
 
